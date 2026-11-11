@@ -60,7 +60,7 @@ def tokenize(data):
 			words = [str(w) for w in s.split(".") if w]
 			paragraph = ' '.join(words).lstrip()
 
-			index[pg] += (paragraph)
+			index[pg] += ' ' + paragraph
 
 	return index
 
